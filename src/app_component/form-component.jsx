@@ -15,19 +15,30 @@ const Form = (props) => {
             <input
               type='text'
               className='form-control'
-              name='city'
-              autoComplete='off'
+              name='city1'
               placeholder='Oras...'
+              list='cityList'
             />
+            <datalist id='cityList'>
+              <option>Bucuresti</option>
+              <option>Constanta</option>
+              <option>Alexandria</option>
+              <option>Budapesta</option>
+            </datalist>
           </div>
           <div className='col-md-3'>
             <input
               type='text'
               className='form-control'
-              name='country'
-              autoComplete='off'
+              name='country1'
               placeholder='Tara...'
+              list='countryList'
             />
+            <datalist id='countryList'>
+              <option>Romania</option>
+              <option>Egipt</option>
+              <option>Ungaria</option>
+            </datalist>
           </div>
           <div className='col-md-3 mt-md-0 text-md-left'>
             <button
